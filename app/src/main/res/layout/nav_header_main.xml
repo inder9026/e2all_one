@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.labjob.e2all.customViews.ScrimInsetsFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_navigation_drawer_rootLayout"
+    style="@style/ScrimInsetsLayout"
+  >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/navigation_drawer_account_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/navigation_drawer_account_section_default_height"
+            android:layout_marginTop="80dp"
+            android:clickable="true"
+            tools:layout_height="200dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:foreground="@color/black_alpha_50">
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/navigation_drawer_user_account_picture_cover"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/pink_magenta"
+                    android:scaleType="centerCrop"
+                    tools:ignore="ContentDescription" />
+
+            </FrameLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginTop="20dp"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/navigation_drawer_user_account_picture_profile"
+        android:layout_width="65dp"
+        android:layout_height="59dp"
+        android:src="@drawable/ic_account_circle_white_64dp" />
+
+
+                <LinearLayout
+                    android:id="@+id/navigation_drawer_account_information"
+                    android:layout_width="200dp"
+                    android:layout_height="@dimen/navigation_drawer_account_information_height"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/user1"
+                        style="@style/NavDrawerAccountInfoText"
+                        android:textSize="18dp"
+                        android:text="@string/tools_text_account_information_username"
+                        tools:fontFamily="sans-serif-medium"/>
+                    <TextView
+                        android:id="@+id/user2"
+                        style="@style/NavDrawerAccountInfoText"
+                        android:text="@string/tool_200"
+                        android:textSize="15dp"
+                        android:textColor="#A9AAAE"
+                        tools:fontFamily="sans-serif-medium"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/user3"
+                        android:textSize="15dp"
+
+                        style="@style/NavDrawerAccountInfoText"
+                        android:text="@string/edit_profile"
+                        android:layout_gravity="center"
+                        tools:fontFamily="sans-serif-medium"/>
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/pencill"
+                            android:layout_marginLeft="4dp"
+                            android:layout_gravity="center"
+                            app:tint="@color/grey_200">
+
+
+                        </ImageView>
+                    </LinearLayout>
+                </LinearLayout>
+</LinearLayout>
+
+
+        </FrameLayout>
+
+        <!-- Drawer items -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/navigation_drawer_background"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/nav_drawer_vertical_spacing_listing"
+            android:paddingTop="@dimen/nav_drawer_vertical_spacing_listing">
+
+            <LinearLayout
+                android:id="@+id/navigation_drawer_linearLayout_entries_root_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Course"
+                    android:textSize="15dp"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"
+                    >
+
+                </TextView>
+                <FrameLayout
+                    android:id="@+id/navigation_drawer_items_list_linearLayout_home"
+                    style="@style/NavDrawerRowLayout.Main">
+
+                    <com.labjob.e2all.customViews.TintOnStateImageView
+                        android:id="@+id/navigation_drawer_items_list_icon_home"
+                        style="@style/NavDrawerRowItemIcon"
+                        android:src="@drawable/ic_home_white_24dp"
+                        tools:ignore="ContentDescription"
+
+                        tools:tint="@color/nav_drawer_item_icon_selected" />
+
+                    <TextView
+                        android:id="@+id/navigation_drawer_items_textView_home"
+                        style="@style/NavDrawerRowItemText"
+                        android:text="First Menu"
+
+                        tools:fontFamily="sans-serif-medium"
+                        tools:textColor="@color/nav_drawer_item_text_selected"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/navigation_drawer_items_list_linearLayout_explore"
+                    style="@style/NavDrawerRowLayout.Main" >
+
+                    <com.labjob.e2all.customViews.TintOnStateImageView
+                        android:id="@+id/navigation_drawer_items_list_icon_explore"
+                        style="@style/NavDrawerRowItemIcon"
+                        android:src="@drawable/ic_explore_white_24dp"
+                        android:tint="@color/green_500"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/navigation_drawer_items_textView_explore"
+                        style="@style/NavDrawerRowItemText"
+
+                        android:text="Second Menu"
+                        tools:fontFamily="sans-serif-medium" />
+
+                </FrameLayout>
+
+                <include
+                    layout="@layout/navigation_drawer_divider"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Course"
+                    android:textSize="15dp"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"
+                    >
+
+                </TextView>
+                <FrameLayout
+                    android:id="@+id/navigation_drawer_items_list_linearLayout_help_and_feedback"
+                    style="@style/NavDrawerRowLayout.Secondary">
+
+                    <com.labjob.e2all.customViews.TintOnStateImageView
+                        android:id="@+id/navigation_drawer_items_list_icon_help_and_feedback"
+                        style="@style/NavDrawerRowItemIcon"
+                        android:src="@drawable/ic_help_white_24dp"
+                        android:tint="@color/green_500"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/navigation_drawer_items_textView_help_and_feedback"
+                        style="@style/NavDrawerRowItemText"
+                        android:text="Help"
+                        tools:fontFamily="sans-serif-medium" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/navigation_drawer_items_list_linearLayout_about"
+                    style="@style/NavDrawerRowLayout.Secondary">
+
+                    <com.labjob.e2all.customViews.TintOnStateImageView
+                        android:id="@+id/navigation_drawer_items_list_icon_about"
+                        style="@style/NavDrawerRowItemIcon"
+                        android:src="@drawable/ic_info_white_24dp"
+                        android:tint="@color/green_500"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/navigation_drawer_items_textView_about"
+                        style="@style/NavDrawerRowItemText"
+                        android:text="Abouts"
+                        tools:fontFamily="sans-serif-medium" />
+
+                </FrameLayout>
+
+                <include
+                    layout="@layout/navigation_drawer_divider"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Course"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"
+                    >
+
+                </TextView>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</com.labjob.e2all.customViews.ScrimInsetsFrameLayout>

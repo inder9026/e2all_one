@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.labjob.e2all">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:largeHeap="true"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Trial.trial" />
+        <activity android:name=".forget.Forget" />
+        <activity android:name=".Dashboard.Dashboard" />
+        <activity android:name=".AllVideos.All_Videos" />
+        <activity android:name=".Welcome_activity" />
+        <activity android:name=".Uploadearn.uploadnearn" />
+        <activity android:name=".login.login" />
+        <activity android:name=".Signup.Sign_up" />
+        <activity android:name=".UploadVideo.Upload_video" />
+        <activity android:name=".sendotp.send_otp" />
+        <activity android:name=".Videos.Videos" />
+        <activity
+            android:name=".videofullview.Video_full_view"
+            android:label="@string/title_activity_dashboard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Votenow.Votenow" />
+        <activity android:name=".allcountry.All_countires" />
+        <activity android:name=".statelist.State_list" />
+        <activity android:name=".Splash.Splash_screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+    </application>
+
+</manifest>

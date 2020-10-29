@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/full">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Upload your Video to participate in E2all video contest"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Fill out the form below to participate in online E2all Video contest and submit your entry."
+            android:textColor="#989595"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="7dp"
+    android:layout_height="220dp"
+>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:fontFamily="serif"
+        android:text="Personal Details"
+        android:textColor="@color/colorPrimary"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:focusableInTouchMode="true"
+        android:id="@+id/name"
+        android:layout_marginRight="5dp"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/upload_edit_box_bg"
+        android:fontFamily="serif"
+        android:layout_marginLeft="5dp"
+        android:hint="Name"
+
+        />
+        <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+            android:textSize="15sp"
+            android:focusableInTouchMode="true"
+            android:id="@+id/email"
+        android:layout_marginRight="5dp"
+            android:background="@drawable/upload_edit_box_bg"
+
+            android:layout_marginTop="5dp"
+        android:fontFamily="serif"
+        android:layout_marginLeft="5dp"
+        android:hint="Email"
+        />
+        <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+            android:focusableInTouchMode="true"
+        android:id="@+id/mobile"
+            android:inputType="number"
+            android:maxLength="10"
+            android:background="@drawable/upload_edit_box_bg"
+            android:textSize="15sp"
+
+            android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="serif"
+        android:layout_marginLeft="5dp"
+        android:hint="Mobile Number"
+        />
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView><androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_height="220dp"
+>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:fontFamily="serif"
+        android:text="Video Details"
+        android:textColor="@color/colorPrimary"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/video_title"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        android:focusableInTouchMode="true"
+        android:fontFamily="serif"
+        android:background="@drawable/upload_edit_box_bg"
+        android:layout_marginLeft="5dp"
+        android:hint="Video Title Here"
+        />
+        <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/words"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        android:focusableInTouchMode="true"
+        android:singleLine="false"
+        android:inputType="textLongMessage"
+        android:fontFamily="serif"
+        android:background="@drawable/upload_edit_box_bg"
+        android:layout_marginLeft="5dp"
+        android:hint="Write few words about your Video"
+        />
+        <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/upload_video"
+        android:layout_marginRight="5dp"
+        android:textColorHint="#ffffff"
+        android:layout_marginTop="5dp"
+        android:fontFamily="serif"
+        android:background="#ED871E"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:hint="Upload Video"
+        />
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:fontFamily="serif"
+        android:text="Select video length"
+        android:textColor="@color/colorPrimary"
+        />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textSize="10sp"
+            android:text="30 second"
+            >
+        </RadioButton>
+          <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+              android:textSize="10sp"
+              android:text="60 second"
+            >
+        </RadioButton>
+          <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+              android:textSize="10sp"
+              android:text="90 second"
+            >
+        </RadioButton>
+          <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+              android:textSize="10sp"
+            android:text="120 second"
+            >
+
+        </RadioButton>
+
+
+    </RadioGroup>
+
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginTop="5dp"
+    android:layout_gravity="center">
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/video_view"
+        android:layout_marginRight="5dp"
+        android:adjustViewBounds="true"
+        android:scaleType="center"
+        android:layout_marginLeft="5dp"
+        />
+</RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/submit_video"
+        android:layout_marginRight="5dp"
+        android:textColorHint="#ffffff"
+        android:layout_marginTop="5dp"
+        android:fontFamily="serif"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="5dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:hint="Submit"
+        />
+</LinearLayout>
+</ScrollView>

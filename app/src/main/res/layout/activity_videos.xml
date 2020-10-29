@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    tools:context=".Videos.Videos">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/hands"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical"
+
+        android:background="#882A54"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textAllCaps="true"
+            android:layout_marginTop="3dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:fontFamily="serif"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:text="OnGoing Contest"
+/> <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:textAllCaps="true"
+            android:textSize="10sp"
+            android:layout_gravity="center"
+            android:fontFamily="serif"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:text="STATUS AND SCHEDULE"
+/>
+    </LinearLayout>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_marginTop="5dp"
+    android:layout_height="150dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="horizontal"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="75dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_enroll"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20sp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textColor="#ffffff"
+                android:text="01"
+                />
+ <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20sp"
+                android:textAllCaps="true"
+     android:gravity="center"
+                android:textSize="18sp"
+     android:textStyle="bold"
+     android:fontFamily="serif"
+                android:textColor="#ffffff"
+                android:text="Oct"
+                />
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:gravity="start"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                android:textSize="15sp"
+                android:layout_gravity="start"
+                android:textColor="#882A54"
+                android:text="Class VI Contest"
+                android:singleLine="true"
+                /><TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+
+            android:fontFamily="serif"
+            android:layout_gravity="start"
+            android:gravity="start"
+                android:textSize="10sp"
+            android:layout_marginTop="3dp"
+
+            android:textColor="#6200EA"
+            android:text="Contest start date: 22/sep/2019"
+                />
+            <TextView
+                android:layout_width="150dp"
+                android:layout_marginTop="3dp"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textColor="#6200EA"
+                android:fontFamily="serif"
+            android:text="End date: 22/sep/2020"
+                />
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+android:textStyle="bold"
+                android:fontFamily="serif"
+                android:textSize="10sp"
+                android:text="Contest Participant : Student"
+                android:textColor="#882A54"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            >
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Particpate Now !"
+                android:textColor="#ffffff"
+                android:fontFamily="serif"
+                android:textAllCaps="false"
+                android:id="@+id/participate"
+                android:textSize="8sp"
+                android:layout_marginLeft="10dp"
+                android:background="#882A54"
+                />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="View Contest Video"
+        android:textColor="#ffffff"
+        android:layout_marginTop="7dp"
+        android:id="@+id/view_videos"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="2dp"
+        android:layout_gravity="center"
+        android:background="#882A54"
+        android:fontFamily="serif"
+        />
+<include layout="@layout/open_gallery"
+    android:layout_marginBottom="10dp"
+    tools:ignore="IncludeLayoutParam" />
+
+        <include layout="@layout/open_gallery"
+    android:layout_marginBottom="10dp"
+    tools:ignore="IncludeLayoutParam" />
+
+    </LinearLayout>
+
+</ScrollView>
